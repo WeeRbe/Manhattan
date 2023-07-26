@@ -2,10 +2,25 @@
 <html lang="en">
   @@include('html/head.html', { "title":"Manhattan" })
   <body class="body__wrapper">
-    @@include('html/header.html', {
-      "class":"main_page"
-    })
-    <main></main>
+    @@include('html/header.html', { "class":"main_page" })
+    <main>
+      <div class="main_posters __container">
+        <img src="./images/main-page/fontanka.jpg" class="main_poster__img" alt="Fontanka" />
+        <div class="posters_inform">
+          <div class="posters_inform__nav">
+            <button class="posters_inform__btn active">Ближайшие</button>
+            <button class="posters_inform__btn">скоро</button>
+          </div>
+          <div class="posters_inform__img">
+            <img src="./images/main-page/1.jpg" alt="" />
+            <img src="./images/main-page/2.jpg" alt="" /><img
+              src="./images/main-page/3.jpg"
+              alt=""
+            /><img src="./images/main-page/4.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </main>
     @@include('html/footer.html', {})
   </body>
   @@include('html/script.html', {})
